@@ -19,7 +19,7 @@ export default class CenaPrincipal extends Component {
     return (
         <View style={{backgroundColor: '#FFF', flex: 1}}>
             <StatusBar
-            backgroundColor='#CCC'
+              backgroundColor='#CCC'
             />
             <BarraNavegacao />
             <View style={styles.logo}>
@@ -27,18 +27,18 @@ export default class CenaPrincipal extends Component {
             </View>
             <View style={styles.menu}>
               <View style={styles.menuGroup}>
-                <TouchableHighlight onPress={()=>this.props.navigator.push({id:'cliente'})}>
+                <TouchableHighlight underlayColor={'#b9c941'} activeOpacity={0.3} onPress={()=>this.props.navigator.push({id:'cliente'})}>
                   <Image style={styles.image} source={menuCliente} />
                 </TouchableHighlight>
-                <TouchableHighlight onPress={()=> this.props.navigator.push({id:'contato'})}>
+                <TouchableHighlight underlayColor={'#61bd8c'} activeOpacity={0.3} onPress={()=> this.props.navigator.push({id:'contato'})}>
                   <Image style={styles.image} source={menuContato} />
                 </TouchableHighlight>
               </View>
               <View style={styles.menuGroup}>
-                <TouchableHighlight onPress={()=> this.props.navigator.push({id:'empresa'})}>
+                <TouchableHighlight underlayColor={'#ec7148'} activeOpacity={0.3} onPress={()=> this.props.navigator.push({id:'empresa'})}>
                   <Image style={styles.image} source={menuEmpresa} />
                 </TouchableHighlight>
-                <TouchableHighlight onPress={()=> this.props.navigator.push({id:'servico'})}>
+                <TouchableHighlight underlayColor={'#19d1c8'} activeOpacity={0.3} onPress={()=> this.props.navigator.push({id:'servico'})}>
                   <Image style={styles.image} source={menuServico} />
                 </TouchableHighlight>
               </View>
